@@ -20,11 +20,20 @@ Please make sure all of these files above are placed in the same directory, as w
 
 ### Input Format
 
-Please check the structure of the raw chat log. It should be a csv file and contains the following columns.
+Please check the structure of the raw chat log. It should be a csv file where each line of a chat conversation is an individual line in the csv, and the csv contains the following columns:
 
-| File        | conversationID | fromJID | fromJIDResource | sentDate | body | Time | Date |
-|-------------|----------------|---------|-----------------|----------|------|------|------|
+| File  | conversationID | fromJID | fromJIDResource | body | Time | Date |
+|-------|----------------|---------|-----------------|------|------|------|
 
+* File: The original filename of the data; this is a carryover from using OpenRefine for some initial cleaning of ASCII characters.
+* conversationID: A unique identifier for each chat conversation.
+* fromJID: The username (if staff) or unique identifier of the person who typed into the chatbox.
+* fromJIDResource: Identifies whether the person who typed was staff (string "Smack") or a patron (any other string).
+* body: The actual text written into the chatbox.
+* Time: The time a line of chat was sent.
+* Date: The date a line of chat was sent.
+
+(The above format is based on the way the chat software was set up at the time of this project.)
 
 ### Installing
 
