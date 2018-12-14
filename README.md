@@ -135,8 +135,9 @@ Topic10: thank good chat okay one night help know open oh
 LDA Mean Topic Coherence: 0.1610832050527773
 ```
 
-The nPMI score is only a reference metric that evaluates the re-appearance of topic words in the reference corpus. In general, the larger nPMI is, the better the model performs. 
-However, studies suggested that there are significant gap between the score and human interpretability. Because of that, we didn't do parameter tuning based on the nPMI score.
+The nPMI score ("Mean Topic Coherence") is only a reference metric that evaluates the re-appearance of topic words in the reference corpus. In general, the larger nPMI is, the better the model performs. However, studies suggested that there are significant gap between the score and human interpretability. Because of that, we didn't do parameter tuning based on the nPMI score.
+
+*A quick note about phrase-LDA: This topic model, as we implemented it, required many files and subfolders. It was also intricately connected with our data. We have tried to share the structure and all necessary components here, without sharing the raw data. It's likely that in the translation process, phrase-LDA will have some bugs.*
 
 ### Key Parameters
 
