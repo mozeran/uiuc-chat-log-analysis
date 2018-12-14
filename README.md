@@ -175,8 +175,8 @@ Additionally, to change the learning method in [LDA](http://scikit-learn.org/sta
 
 ## Authors
 
-* Xinyu Tian
-* Megan Ozeran
+* [Xinyu Tian](https://github.com/tianxiny)
+* [Megan Ozeran](https://github.com/mozeran)
 
 ## Acknowledgments
 
